@@ -6,3 +6,4 @@ fixtures:
     acl: "puppetlabs/acl"
     iis: "puppetlabs/iis"
     stdlib: "puppetlabs/stdlib"
+    pwshlib: "puppetlabs/pwshlib"

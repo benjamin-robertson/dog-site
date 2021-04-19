@@ -6,8 +6,7 @@
 #   include dog_site
 class dog_site (
   String $favourite = 'Poodles',
-)
-{
+) {
 
   file {'c:\inetpub\dogsite':
     ensure => directory,
