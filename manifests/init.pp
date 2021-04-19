@@ -16,7 +16,7 @@ class dog_site (
 
   file {'c:\inetpub\dogsite\dogs.html':
     ensure  => file,
-    content => epp('templates\dogs.epp', {'favourite' => $favourite, 'servertype' => $facts['os']['windows']['product_name']}),
+    content => epp('dog_site/dogs.epp', {'favourite' => $favourite, 'servertype' => $facts['os']['windows']['product_name']}),
   }
 
   acl { 'c:\inetpub\dogsite':

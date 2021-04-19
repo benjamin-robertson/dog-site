@@ -3,4 +3,6 @@
 ---
 fixtures:
   forge_modules:
-#     stdlib: "puppetlabs/stdlib"
+    acl: "puppetlabs/acl"
+    iis: "puppetlabs/iis"
+    stdlib: "puppetlabs/stdlib"
