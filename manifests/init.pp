@@ -5,7 +5,7 @@
 # @example
 #   include dog_site
 class dog_site (
-  String $favourite = 'main branch in Puppetfile',
+  String $favourite = 'feature_branch test',
 ) {
 
   file {'c:\inetpub\dogsite':
