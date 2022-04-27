@@ -1,6 +1,6 @@
 # @summary A short summary of the purpose of this class
 #
-# Test update
+# Test update 123
 #
 # @example
 #   include dog_site
