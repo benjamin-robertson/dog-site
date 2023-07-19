@@ -1,21 +1,20 @@
 # @summary A short summary of the purpose of this class
 #
-# Test update 123
+# Fixed spacing issues
 #
 # @example
 #   include dog_site
 class dog_site (
   String $favourite = 'main branch in Puppetfile',
 ) {
-
-  file {'c:\inetpub\dogsite':
+  file { 'c:\inetpub\dogsite':
     ensure => directory,
     owner  => system,
   }
 
-  file {'c:\inetpub\dogsite\dogs.html':
+  file { 'c:\inetpub\dogsite\dogs.html':
     ensure  => file,
-    content => epp('dog_site/dogs.epp', {'favourite' => $favourite, 'servertype' => $facts['os']['windows']['product_name']}),
+    content => epp('dog_site/dogs.epp', { 'favourite' => $favourite, 'servertype' => $facts['os']['windows']['product_name']}),
   }
 
   acl { 'c:\inetpub\dogsite':
