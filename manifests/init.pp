@@ -33,7 +33,7 @@ class dog_site (
       {
         'bindinginformation' => '*:80:dogs',
         'protocol'           => 'http',
-      }
+      },
     ],
     defaultpage      => 'dogs.html',
     name             => 'dog web site',
